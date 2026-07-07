@@ -31,8 +31,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 SpeedTest Pro is designed to run in a Docker container using a highly optimized standalone build.
 
 ```bash
-docker build -t speedtest-pro .
-docker run -p 3000:3000 speedtest-pro
+docker run -p 3000:3000 ghcr.io/xiliourt/speedjs:latest
 ```
 
 The Docker image leverages advanced layer caching, splitting your dependencies (`node_modules`) into a separate layer from your application code, resulting in lightning-fast sub-5MB repulls when your code changes!
