@@ -12,6 +12,16 @@ SpeedTest Pro is a highly accurate, threaded network benchmark tool built with N
 
 ## Getting Started
 
+### Docker Deployment
+
+SpeedTest Pro is designed to run in a Docker container using a highly optimized standalone build.
+
+```bash
+docker run -p 3000:3000 ghcr.io/xiliourt/speedjs:latest
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 ### Local Development
 
 1. Install dependencies:
@@ -22,16 +32,6 @@ npm install
 2. Run the development server:
 ```bash
 npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-### Docker Deployment
-
-SpeedTest Pro is designed to run in a Docker container using a highly optimized standalone build.
-
-```bash
-docker run -p 3000:3000 ghcr.io/xiliourt/speedjs:latest
 ```
 
 ## Built With
