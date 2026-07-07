@@ -34,8 +34,7 @@ ENV NEXT_TELEMETRY_DISABLED=1
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-# Copy public folder (needed for static assets like icon.svg)
-COPY --from=builder /app/public ./public
+
 
 # Copy the standalone node_modules as a distinct layer.
 # This layer rarely changes and will remain cached unless you install new dependencies.
